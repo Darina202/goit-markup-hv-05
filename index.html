@@ -377,11 +377,9 @@
           </ul>
         </div>
         <div class="footer-registration">
+          <p class="footer-reg-title">Subscribe</p>
           <form class="footer-form">
-            <div class="form-col">
-              <label for="footer-email" class="footer-reg-title"
-                >Subscribe</label
-              >
+            <label class="footer-form-label">
               <input
                 type="email"
                 class="footer-reg-input"
@@ -389,8 +387,8 @@
                 id="footer-email"
                 placeholder="E-mail"
                 required
-              />
-            </div>
+            /></label>
+
             <button type="submit" class="footer-reg-btn">
               Subscribe
               <svg class="footer-form-svg" width="24" height="24">
@@ -411,13 +409,13 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="modal-form">
           <div class="modal-field">
-            <label for="modal-person" class="modal-form-title">Name</label>
+            <label for="user-name" class="modal-form-title">Name</label>
             <div class="input-wrap">
               <input
                 type="text"
                 class="modal-form-input"
                 name="user-name"
-                id="modal-person"
+                id="user-name"
                 required
               />
               <svg class="modal-form-icon" width="18" height="24">
@@ -455,25 +453,25 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
-            <label for="modal-comment" class="modal-form-title">Comment</label>
+          <div class="modal-comment">
+            <label for="user-comment" class="modal-form-title">Comment</label>
             <textarea
               class="modal-form-textarea"
               name="user-comment"
-              id="modal-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-field">
+          <div class="modal-privet">
             <input
               class="form-checkbox-input visually-hidden"
               type="checkbox"
               name="privpol"
-              id="privpol"
+              id="user-privacy"
               value="true"
             />
-            <label for="privpol" class="form-checkbox-label">
-              <span>
+            <label for="user-privacy" class="form-checkbox-label">
+              <span class="checkbox-sing">
                 <svg class="check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-modal-checkbox"></use>
                 </svg>
@@ -481,8 +479,8 @@
               I accept the terms and conditions of the
               <a href="" class="form-checkbox-link"> Privacy Policy</a>
             </label>
-            <button type="submit" class="hero-btn modal-btn">Send</button>
           </div>
+          <button type="submit" class="modal-btn">Send</button>
         </form>
       </div>
     </div>
